@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #1a1a1a;
+    overflow: hidden;
+    margin: 0;
+}
+
+.book {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.page {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    transform-origin: left;
+}
+
+.page.right {
+    left: 50%;
+    transform-origin: right;
+}
+
+.particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.particle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: gold;
+    border-radius: 50%;
+}
